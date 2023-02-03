@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget-Calculator</title>
+    <style>
+        hr.top-line {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<main>
+
+    <body>
+        <section class="Main-Title">
+            <h1>Budget Finder</h1>
+        </section>
+
+        <section class="section-title">
+            <h2>Job-List</h2>
+        </section>
+
+        <hr class="top-line">
+
+        <section class="section-title-description">
+            <p>Pick a job from the option list:</p>
+        </section>
+
+        <section class="List-of-jobs" id="buttons">
+        </section>
+
+
+        <section class="Calc-Title">
+            <h2>Calculations</h2>
+        </section>
+
+        <section class="form1">
+            <table>
+                <tr>
+                    <td id="10" class="grossMonthly"></td>
+                    <td>/ 12 (Monthly Gross Income)</td>
+                    <td id="11"></td>
+                </tr>
+                <tr>
+                    <td id="12" class="grossMonthly"></td>
+                    <td>X 12% (Federal Taxes)</td>
+                    <td id="13"></td>
+                </tr>
+                <tr>
+                    <td id="14"></td>
+                    <td>X 7% (State Taxes)</td>
+                    <td id="15"></td>
+                </tr>
+                <tr>
+                    <td id="16"></td>
+                    <td>X 6.2% (Social Security)</td>
+                    <td id="17"></td>
+                </tr>
+                <tr>
+                    <td id="18"></td>
+                    <td>X 1.45% (Medicare)</td>
+                    <td id="19"></td>
+                </tr>
+                <tr>
+                    <td id="20"></td>
+                    <td>X 1% (State Disability)</td>
+                    <td id="21"></td>
+                </tr>
+                <tr>
+                    <td id="22"></td>
+                    <td>X 5% (Retirement Investment)</td>
+                    <td id="23"></td>
+                </tr>
+                <tr>
+                    <td id="24"></td>
+                    <td>+ 180 (Medical Insurance)</td>
+                    <td id="25"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>X 0.12 (Federal Taxes)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>X 0.12 (Federal Taxes)</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <script src="calculation.js"></script>
+    </body>
+</main>
+
+</html>

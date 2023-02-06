@@ -88,18 +88,90 @@ let grossMonthlyElems = document.getElementsByClassName('grossMonthly');
 console.log(grossMonthlyElems); //need to write logic to change inner text in each elem as a loop.
 
 let YrIncome;
-let mnIncome
+let mnIncome;
+let mnIncome2;
+let mnIncome3;
+let mnIncome4;
+let mnIncome5;
+let mnIncome6;
+let mnIncome7;
+let mnIncome8;
 let fedTax;
 let stateTax;
 let SS;
 let med;
+let stDis
 let retInv;
 let medIn;
+let totalDec;
+let mn;
 
 function updateIncome (income) {
     console.log("$" + income);
     YrIncome = document.getElementById("10");
-    YrIncome.innerText = "$" + income;
+    let a = income;
+    YrIncome.innerText = "$" + a.toFixed(2);
+
+    mnIncome = document.getElementById("11");
+    let b = (income / 12);
+    mnIncome.innerText = "$" + b.toFixed(2);
+
+    mnIncome2 = document.getElementById("12");
+    mnIncome2.innerText = "$" + b.toFixed(2);
+
+    mnIncome3 = document.getElementById("14");
+    mnIncome3.innerText = "$" + b.toFixed(2);
+
+    mnIncome4 = document.getElementById("16");
+    mnIncome4.innerText = "$" + b.toFixed(2);
+
+    mnIncome5 = document.getElementById("18");
+    mnIncome5.innerText = "$" + b.toFixed(2);
+
+    mnIncome6 = document.getElementById("20");
+    mnIncome6.innerText = "$" + b.toFixed(2);
+
+    mnIncome7 = document.getElementById("22");
+    mnIncome7.innerText = "$" + b.toFixed(2);
+
+    mnIncome2 = document.getElementById("26");
+    mnIncome2.innerText = "$" + b.toFixed(2);
+
+    fedTax = document.getElementById("13");
+    let c = ((income / 12) * .12);
+    fedTax.innerText = "$" + c.toFixed(2);
+
+    stateTax = document.getElementById("15");
+    let d = ((income / 12) * .07);
+    stateTax.innerText = "$" + d.toFixed(2);
+
+    SS = document.getElementById("17");
+    let e = ((income / 12) * .062);
+    SS.innerText = "$" + e.toFixed(2);
+
+    med = document.getElementById("19");
+    let f = ((income / 12) * .0145);
+    med.innerText = "$" + f.toFixed(2);
+
+    stDis = document.getElementById("21");
+    let g = ((income / 12) * .01);
+    stDis.innerText = "$" + g.toFixed(2);
+
+    retInv = document.getElementById("23");
+    let h = ((income / 12) * .0145);
+    retInv.innerText = "$" + h.toFixed(2);
+
+    medIn = document.getElementById("25");
+    let i = 180;
+    medIn.innerText = "$" + i;
+
+    totalDec = document.getElementById("27");
+    let j = c + d + e + f + g + h + i;
+    totalDec.innerText = "$" + j.toFixed(2);
+
+    mn = document.getElementById("28");
+    let k = b - j;
+    mn.innerText = "$" + k.toFixed(2);
 }
 
 

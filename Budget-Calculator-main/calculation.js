@@ -48,7 +48,7 @@ const data = [
     [ 'Medical RepairTech.', 52500 ],
     [ 'Military', 55650 ],
     [ 'Nurse', 66150 ],
-    [ 'Nutitionist', 45150 ],
+    [ 'Nutritionist', 45150 ],
     [ 'Oceanographer', 69300 ],
     [ 'Pastor', 50400 ],
     [ 'PGBEATT Technician', 78750 ],
@@ -167,12 +167,14 @@ function updateIncome (income) {
 
     totalDec = document.getElementById("27");
     let j = c + d + e + f + g + h + i;
-    totalDec.innerText = "$" + j.toFixed(2);
+    totalDec.innerText = "- $" + j.toFixed(2);
 
     mn = document.getElementById("28");
     let k = b - j;
     mn.innerText = "$" + k.toFixed(2);
+
+    hp = document.getElementById("29");
+    let l = b/3;
+    hp.innerText = "$"+l.toFixed(2);
 }
-
-
 

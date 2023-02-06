@@ -11,12 +11,15 @@
         hr.top-line {
             border: 1px solid black;
         }
+        hr.bottom-line {
+            border: 1px solid black;
+        }
     </style>
 </head>
 
-<main>
 
-    <body>
+<body>
+        <main>
         <section class="Main-Title">
             <h1>Budget Finder</h1>
         </section>
@@ -38,6 +41,8 @@
         <section class="Calc-Title">
             <h2>Calculations</h2>
         </section>
+
+        <hr class="bottom-line">
 
         <section class="form1">
             <table>
@@ -88,14 +93,14 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td>X 0.12 (Federal Taxes)</td>
-                    <td></td>
+                    <td>X 33% (House payment)</td>
+                    <td id="29"></td>
                 </tr>
             </table>
         </section>
 
         <script src="calculation.js"></script>
+    </main>
     </body>
-</main>
 
 </html>

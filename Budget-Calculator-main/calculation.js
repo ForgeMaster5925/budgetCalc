@@ -176,5 +176,13 @@ function updateIncome (income) {
     hp = document.getElementById("29");
     let l = b/3;
     hp.innerText = "$"+l.toFixed(2);
+
+    mn = document.getElementById("28");
+    let With = document.getElementById("WithDrawl");
+    let Dep = document.getElementById("Deposit");
+    let sal = document.getElementById("remainingMoney");
+
+    sal.textContent = "$" +(parseFloat(mn.innerText.replace("$",""))-parseFloat(With.value)+parseFloat(Dep.value));
+
 }
 

@@ -25,7 +25,7 @@ const data = [
     [ 'Detective', 60900 ],
     [ 'Diesel Tech/Mechanic', 55650 ],
     [ 'Doctor/Physician', 147000 ],
-    [ 'Blectrician', 54600 ],
+    [ 'Electrician', 54600 ],
     [ 'Electronic Engineer', 75600 ],
     [ 'EMT', 34650 ],
     [ 'Energy Management PG&E', 106050 ],
@@ -51,7 +51,7 @@ const data = [
     [ 'Nutritionist', 45150 ],
     [ 'Oceanographer', 69300 ],
     [ 'Pastor', 50400 ],
-    [ 'PGE/ATT Technician', 78750 ],
+    [ 'PG&E/ATT Technician', 78750 ],
     [ 'Pharmacist', 105000 ],
     [ 'Photographer', 45150 ],
     [ 'Physical Therapist', 72450 ],
@@ -214,10 +214,4 @@ function CheckCalc(row){
         eval(`prevVal = document.getElementById("remainingMoney${row-1}");`);
     }
     sal.textContent = "$" +(parseFloat(prevVal.innerText.replace("$",""))-parseFloat(With.value)+parseFloat(Dep.value));
-    
-    
-    
-
-    
 }
-

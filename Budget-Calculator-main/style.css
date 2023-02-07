@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: 
-    #070808;
+    background-color:#5E9D34;
     background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
 }
 
@@ -13,11 +12,19 @@
     padding: 0.8rem;
     margin-left: 35%;
     margin-right: 35%;
-    background-color: #52a535;
+    background-color: #000;
     border-radius: 25px;
-    font-size: 35px;
+    font-size: 60px;
     color: #FFFFFF;
     padding: 1rem;
+    text-shadow:
+        0 1px 0 #000000, 0 2px 0 #000000,
+        0 3px 0 #000000, 0 4px 0 #000000,
+        0 5px 0 #000000, 0 6px 0 #000000,
+        0 7px 0 #000000, 0 8px 0 #000000,
+        0 9px 0 #000000, 0 10px 0 #000000,
+        0 11px 0 #000000, 0 12px 0 #000000,
+        0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
 .section-title {
@@ -25,10 +32,6 @@
     font-size: 35px;
     color: #FFFFFF;
     padding: 1rem;
-}
-
-.top-line {
-    width: 100%;
 }
 
 .section-title-description {
@@ -43,6 +46,7 @@
 }
 
 .List-of-jobs {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -50,13 +54,13 @@
     margin-right: 15%;
 }
 
-.List-of-jobs > section {
+.List-of-jobs>section {
     display: flex;
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.List-of-jobs > section > * {
+.List-of-jobs>section>* {
     border-radius: 25px;
     width: 50%;
     color: #FFFFFF;
@@ -66,7 +70,7 @@
     font-size: 30px;
 }
 
-.List-of-jobs > section > button:hover {
+.List-of-jobs>section>button:hover {
     background-color: #3C8527;
     color: #FFFFFF;
 }
@@ -80,15 +84,16 @@
 }
 
 .form1 {
-    padding-top: 1rem;
+    margin-top: 1rem;
     color: #FFFFFF;
 }
 
-table { 
+table {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
     background-color: #393d40;
+    padding: 0.7rem;
 }
 
 .Register-Title {
@@ -109,8 +114,10 @@ table {
 .register {
     color: #FFFFFF;
 }
-.register input{
+
+.register input {
     color: #FFFFFF;
+    font-family: Monocraft;
 }
 
 .portal img {
@@ -118,10 +125,10 @@ table {
     transition: 100ms;
     display: flex;
     max-width: 100%;
-    margin:  0 auto;
+    margin: 0 auto;
     margin-bottom: 4rem;
     box-shadow: -5px 5px rgba(29, 29, 29, 0.822);
-    
+
 }
 
 .portal img:hover {

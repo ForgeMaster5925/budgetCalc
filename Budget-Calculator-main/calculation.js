@@ -51,7 +51,7 @@ const data = [
     [ 'Nutritionist', 45150 ],
     [ 'Oceanographer', 69300 ],
     [ 'Pastor', 50400 ],
-    [ 'PGBEATT Technician', 78750 ],
+    [ 'PGE/ATT Technician', 78750 ],
     [ 'Pharmacist', 105000 ],
     [ 'Photographer', 45150 ],
     [ 'Physical Therapist', 72450 ],
@@ -85,7 +85,7 @@ for (job of data) {
 }
 
 let grossMonthlyElems = document.getElementsByClassName('grossMonthly');
-console.log(grossMonthlyElems); //need to write logic to change inner text in each elem as a loop.
+console.log(grossMonthlyElems); 
 
 let YrIncome;
 let mnIncome;
@@ -108,6 +108,7 @@ let mn;
 
 function updateIncome (income) {
     console.log("$" + income);
+    document.getElementById("Calculator").scrollIntoView();
     YrIncome = document.getElementById("10");
     let a = income;
     YrIncome.innerText = "$" + a.toFixed(2);
@@ -177,12 +178,46 @@ function updateIncome (income) {
     let l = b/3;
     hp.innerText = "$"+l.toFixed(2);
 
-    mn = document.getElementById("28");
-    let With = document.getElementById("WithDrawl");
-    let Dep = document.getElementById("Deposit");
-    let sal = document.getElementById("remainingMoney");
 
-    sal.textContent = "$" +(parseFloat(mn.innerText.replace("$",""))-parseFloat(With.value)+parseFloat(Dep.value));
+    doCalcCheck
+}
 
+for(let i = 1;i<=8;i++){
+    let With;
+    let Dep;
+    eval(`With = document.getElementById("WithDrawl${i}");`);
+    eval(`Dep = document.getElementById("Deposit${i}");`);
+    With.addEventListener("change", (e) => doCalcCheck());
+    Dep.addEventListener("change", (e) => doCalcCheck());
+    With.value=0;
+    Dep.value=0;
+}
+
+function doCalcCheck(){
+    for(let i = 1;i<=8;i++){
+        CheckCalc(i)
+    }
+}
+
+function CheckCalc(row){
+    
+    let With;
+    let Dep;
+    let sal;
+    let prevVal;
+    eval(`With = document.getElementById("WithDrawl${row}");`);
+    eval(`Dep = document.getElementById("Deposit${row}");`);
+    eval(`sal = document.getElementById("remainingMoney${row}");`);
+    if(row == 1){
+        prevVal = document.getElementById("28");
+    }else{
+        eval(`prevVal = document.getElementById("remainingMoney${row-1}");`);
+    }
+    sal.textContent = "$" +(parseFloat(prevVal.innerText.replace("$",""))-parseFloat(With.value)+parseFloat(Dep.value));
+    
+    
+    
+
+    
 }
 

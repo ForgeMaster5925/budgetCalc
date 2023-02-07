@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     background-color: 
-    #070808
-    ;
+    #070808;
     background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
 }
 
 .Main-Title h1 {
+    margin-top: 1rem;
     text-align: center;
     padding: 0.8rem;
     margin-left: 35%;
@@ -36,6 +36,10 @@
     padding: 1rem;
     color: #FFFFFF;
     font-size: 35px;
+    background-color: #000;
+    border-radius: 25px;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .List-of-jobs {
@@ -99,8 +103,27 @@ table {
     grid-template-columns: auto auto auto auto auto;
     padding: 10px;
     padding-top: 1rem;
+    margin-bottom: 4rem;
 }
 
 .register {
     color: #FFFFFF;
+}
+.register input{
+    color: #FFFFFF;
+}
+
+.portal img {
+    width: 10%;
+    transition: 100ms;
+    display: flex;
+    max-width: 100%;
+    margin:  0 auto;
+    margin-bottom: 4rem;
+    box-shadow: -5px 5px rgba(29, 29, 29, 0.822);
+    
+}
+
+.portal img:hover {
+    transform: scale(1.1);
 }

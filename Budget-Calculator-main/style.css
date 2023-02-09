@@ -118,6 +118,9 @@ table {
 .register input {
     color: #FFFFFF;
     font-family: Monocraft;
+    border: none;
+    font-size: 24px;
+    padding: 0.5rem;
 }
 
 .portal img {
@@ -133,4 +136,15 @@ table {
 
 .portal img:hover {
     transform: scale(1.1);
+    box-shadow: -10px 10px rgba(29, 29, 29, 0.822);
+}
+
+td {
+    font-size: 24px;
+    padding: 1rem;
+}
+
+.form1 {
+    display: flex;
+    justify-content: center;
 }

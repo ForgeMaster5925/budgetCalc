@@ -205,6 +205,12 @@ function CheckCalc(row){
     let Dep;
     let sal;
     let prevVal;
+    if(document.getElementById(`WithDrawl${row}`).value==""){
+        document.getElementById(`WithDrawl${row}`).value=0;
+    }
+    if(document.getElementById(`Deposit${row}`).value==""){
+        document.getElementById(`Deposit${row}`).value=0;
+    }
     eval(`With = document.getElementById("WithDrawl${row}");`);
     eval(`Dep = document.getElementById("Deposit${row}");`);
     eval(`sal = document.getElementById("remainingMoney${row}");`);
